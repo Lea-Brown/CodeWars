@@ -1,5 +1,12 @@
 // My daily Codewars answers. Newest first.
 
+/* Highest and Lowest 7 kyu
+In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number. */
+function highAndLow(numbers) {
+    let sorted = numbers.split(" ").sort((a, b) => a - b);
+    return `${sorted[sorted.length - 1]} ${sorted[0]}`;
+}
+
 /* Function 1 - hello world 8kyu
 Make a simple function called greet that returns the most-famous "hello world!".
 Style Points
@@ -11,7 +18,7 @@ function greet() {
     return hello;
 }
 
-/* Counting sheep... 8kyu
+/* Counting sheep... 8 kyu
 Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present). */
 function countSheeps(arrayOfSheep) {
     let totalSheep = 0;
@@ -19,7 +26,7 @@ function countSheeps(arrayOfSheep) {
     return totalSheep;
 }
 
-/* Summation 8kyu
+/* Summation 8 kyu
 Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0. */
 let summation = function (num) {
     let total = 0;
