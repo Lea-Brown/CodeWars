@@ -1,5 +1,20 @@
 // My daily Codewars answers. Newest first.
 
+/* Get the Middle Character 7kyu
+You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.Had to google this one. */
+function getMiddle(s) {
+    let position;
+    let length;
+    if (s.length % 2 == 1) {
+        position = s.length / 2;
+        length = 1;
+    } else {
+        position = s.length / 2 - 1;
+        length = 2;
+    }
+    return s.substring(position, position + length)
+}
+
 /* Highest and Lowest 7 kyu
 In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number. */
 function highAndLow(numbers) {
