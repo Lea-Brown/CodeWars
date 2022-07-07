@@ -1,5 +1,11 @@
 // My daily Codewars answers. Newest first.
 
+/* Descending Order 7kyu
+Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number. */
+function descendingOrder(n) {
+    return n.toString().split('').sort().reverse().join('') * Math.sign(n);
+}
+
 /* Get the Middle Character 7kyu
 You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.Had to google this one. */
 function getMiddle(s) {
