@@ -1,5 +1,13 @@
 // My daily Codewars answers. Newest first.
 
+/* List Filtering 7kyu
+In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out. */
+function filter_list(l) {
+    let numOnly = [];
+    l.forEach(x => typeof x === 'number' ? numOnly.push(x) : 0);
+    return numOnly;
+}
+
 /* Descending Order 7kyu
 Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number. */
 function descendingOrder(n) {
