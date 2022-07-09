@@ -1,5 +1,22 @@
 // My daily Codewars answers. Newest first.
 
+/* Exes and Ohs 7kyu
+Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char. */
+function XO(str) {
+    let x = 0;
+    let o = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === "x" || str[i] === "X") {
+            x++
+        } else if (str[i] === "o" || str[i] === "O") {
+            o++
+        } else {
+            // do nothing. Probably a better way to write this.
+        }
+    }
+    return x === o;
+}
+
 /* List Filtering 7kyu
 In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out. */
 function filter_list(l) {
