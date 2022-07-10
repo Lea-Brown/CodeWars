@@ -1,5 +1,15 @@
 // My daily Codewars answers. Newest first.
 
+/* Shortest Word 7kyu
+Simple, given a string of words, return the length of the shortest word(s). String will never be empty and you do not need to account for different data types. */
+function findShort(s) {
+    let total = s.split(" ").map(x => {
+        return x.length
+    })
+    total = total.sort(function (a, b) { return a - b })
+    return total[0];
+}
+
 /* Exes and Ohs 7kyu
 Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char. */
 function XO(str) {
