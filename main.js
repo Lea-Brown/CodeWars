@@ -1,5 +1,27 @@
 // My daily Codewars answers. Newest first.
 
+
+/* Complementary DNA 7kyu
+"ATTGC" --> "TAACG"
+"GTAT" --> "CATA" */
+function DNAStrand(dna) {
+    let newString = ""
+    for (let i = 0; i < dna.length; i++) {
+        if (dna[i] === "A") {
+            newString += "T"
+        } else if (dna[i] === "T") {
+            newString += "A"
+        } else if (dna[i] === "C") {
+            newString += "G"
+        } else if (dna[i] === "G") {
+            newString += "C"
+        } else {
+            newString += dna[i];
+        }
+    }
+    return newString;
+}
+
 /* Shortest Word 7kyu
 Simple, given a string of words, return the length of the shortest word(s). String will never be empty and you do not need to account for different data types. */
 function findShort(s) {
