@@ -1,5 +1,24 @@
 // My daily Codewars answers. Newest first.
 
+/* Total amount of points 8kyu
+Write a function that takes such collection and counts the points of our team in the championship. Rules for counting points for each match:
+if x > y: 3 points
+if x < y: 0 point
+if x = y: 1 point */
+function points(games) {
+    let total = 0;
+    games.forEach(x => {
+        if (x[0] > x[2]) {
+            total += 3;
+        } else if (x[0] < x[2]) {
+            total += 0;
+        } else {
+            total += 1;
+        }
+    })
+    return total;
+}
+
 /* Sum of two lowest positive integers 7kyu
 Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed. */
 function sumTwoSmallestNumbers(numbers) {
