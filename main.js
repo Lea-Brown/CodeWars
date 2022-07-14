@@ -1,5 +1,16 @@
 // My daily Codewars answers. Newest first.
 
+/* Does my number look big in this? 6kyu
+Your code must return true or false (not 'true' and 'false') depending upon whether the given number is a Narcissistic number in base 10. This may be True and False in your language, e.g. PHP. */
+function narcissistic(value) {
+    let total = 0;
+    value = value.toString()
+    for (let i = 0; i < value.length; i++) {
+        total += (value[i] ** value.length)
+    }
+    return total == value;
+}
+
 /* Total amount of points 8kyu
 Write a function that takes such collection and counts the points of our team in the championship. Rules for counting points for each match:
 if x > y: 3 points
