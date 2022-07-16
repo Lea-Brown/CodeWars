@@ -1,5 +1,31 @@
 // My daily Codewars answers. Newest first.
 
+/* Create Phone Number 6kyu
+https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/javascript */
+function createPhoneNumber(numbers) {
+    return `(${numbers[0]}${numbers[1]}${numbers[2]}) ${numbers[3]}${numbers[4]}${numbers[5]}-${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}`
+}
+
+/* Who likes it? 6kyu
+[]                                -->  "no one likes this"
+["Peter"]                         -->  "Peter likes this"
+["Jacob", "Alex"]                 -->  "Jacob and Alex like this"
+["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
+["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"*/
+function likes(names) {
+    if (names.length === 0) {
+        return "no one likes this"
+    } else if (names.length === 1) {
+        return `${names[0]} likes this`
+    } else if (names.length === 2) {
+        return `${names[0]} and ${names[1]} like this`
+    } else if (names.length === 3) {
+        return `${names[0]}, ${names[1]} and ${names[2]} like this`
+    } else {
+        return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
+    }
+}
+
 /* Does my number look big in this? 6kyu
 Your code must return true or false (not 'true' and 'false') depending upon whether the given number is a Narcissistic number in base 10. This may be True and False in your language, e.g. PHP. */
 function narcissistic(value) {
