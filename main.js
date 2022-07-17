@@ -1,5 +1,16 @@
 // My daily Codewars answers. Newest first.
 
+/* Beginner Series #2 Clock 8kyu
+https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
+*/
+function past(h, m, s) {
+    let total = 0;
+    total += h * 3600000;
+    total += m * 60000;
+    total += s * 1000
+    return total;
+}
+
 /* Create Phone Number 6kyu
 https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/javascript */
 function createPhoneNumber(numbers) {
