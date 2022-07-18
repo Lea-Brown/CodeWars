@@ -1,5 +1,17 @@
 // My daily Codewars answers. Newest first.
 
+/* How good are you really? 8kyu
+https://www.codewars.com/kata/5601409514fc93442500010b/train/javascript
+*/
+function betterThanAverage(classPoints, yourPoints) {
+    let average = 0;
+    classPoints.forEach(x => {
+        average += x;
+    })
+    average /= classPoints.length;
+    return yourPoints > average;
+}
+
 /* Beginner Series #2 Clock 8kyu
 https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
 */
