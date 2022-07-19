@@ -1,5 +1,18 @@
 // My daily Codewars answers. Newest first.
 
+/* Growth of a Population 7kyu
+https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/javascript
+*/
+function nbYear(p0, percent, aug, p) {
+    let total = p0;
+    let years = 0;
+    for (let i = 0; total < p; i++) {
+        total = Math.floor(total + (total * (percent / 100)) + aug);
+        years++;
+    }
+    return years;
+}
+
 /* How good are you really? 8kyu
 https://www.codewars.com/kata/5601409514fc93442500010b/train/javascript
 */
