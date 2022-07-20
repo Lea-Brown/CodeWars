@@ -1,5 +1,31 @@
 // My daily Codewars answers. Newest first.
 
+/* Simple multiplication 8kyu
+https://www.codewars.com/kata/583710ccaa6717322c000105/train/javascript
+*/
+function simpleMultiplication(number) {
+    if (number % 2 === 0) {
+        return number * 8;
+    } else {
+        return number * 9;
+    }
+}
+
+/* Basic Mathematical Operations 8kyu
+https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/javascript
+*/
+function basicOp(operation, value1, value2) {
+    if (operation === '+') {
+        return value1 + value2;
+    } else if (operation === '-') {
+        return value1 - value2;
+    } else if (operation === '*') {
+        return value1 * value2;
+    } else if (operation === '/') {
+        return value1 / value2;
+    }
+}
+
 /* Growth of a Population 7kyu
 https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/javascript
 */
