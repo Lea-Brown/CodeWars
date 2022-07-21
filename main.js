@@ -1,5 +1,12 @@
 // My daily Codewars answers. Newest first.
 
+/* String ends with? 7kyu
+https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/javascript
+*/
+function solution(str, ending) {
+    return str.endsWith(ending);
+}
+
 /* Simple multiplication 8kyu
 https://www.codewars.com/kata/583710ccaa6717322c000105/train/javascript
 */
