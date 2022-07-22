@@ -1,5 +1,23 @@
 // My daily Codewars answers. Newest first.
 
+/* Beginner Series #1 School Paperwork 8kyu
+https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd/train/javascript
+*/
+function paperwork(n, m) {
+    if (n < 0 || m < 0) {
+        return 0;
+    } else {
+        return n * m;
+    }
+}
+
+/* You Can't Code Under Pressure #1 8kyu
+https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
+*/
+function doubleInteger(i) {
+    return i * 2;
+}
+
 /* String ends with? 7kyu
 https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/javascript
 */
