@@ -1,5 +1,20 @@
 // My daily Codewars answers. Newest first.
 
+/* Sum Mixed Array 8kyu
+https://www.codewars.com/kata/57eaeb9578748ff92a000009/train/javascript
+*/
+function sumMix(x) {
+    let total = 0;
+    x.forEach(x => {
+        if (x === 'number') {
+            total += x
+        } else {
+            total += Number(x)
+        }
+    })
+    return total;
+}
+
 /* Beginner Series #1 School Paperwork 8kyu
 https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd/train/javascript
 */
