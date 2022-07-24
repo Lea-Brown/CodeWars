@@ -1,5 +1,32 @@
 // My daily Codewars answers. Newest first.
 
+/* Likes Vs Dislikes 7kyu
+https://www.codewars.com/kata/62ad72443809a4006998218a/train/javascript
+*/
+function likeOrDislike(buttons) {
+    let result = null;
+
+    buttons.forEach(x => {
+        if (x === 'Like' && result === true) {
+            result = null
+        } else if (x === 'Dislike' && result === false) {
+            result = null
+        } else if (x === 'Like') {
+            result = true;
+        } else if (x === 'Dislike') {
+            result = false;
+        }
+    })
+
+    if (result === null) {
+        return 'Nothing'
+    } else if (result === true) {
+        return 'Like'
+    } else {
+        return 'Dislike'
+    }
+}
+
 /* Sum Mixed Array 8kyu
 https://www.codewars.com/kata/57eaeb9578748ff92a000009/train/javascript
 */
