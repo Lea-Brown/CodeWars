@@ -1,5 +1,26 @@
 // My daily Codewars answers. Newest first.
 
+/* Two to One 7kyu
+https://www.codewars.com/kata/5656b6906de340bd1b0000ac/train/javascript
+*/
+function longest(s1, s2) {
+    let newArr = [];
+    let newString = '';
+    for (let i = 0; i < s1.length; i++) {
+        newArr.push(s1[i])
+    }
+    for (let i = 0; i < s2.length; i++) {
+        newArr.push(s2[i])
+    }
+    newArr.sort();
+    newArr.forEach(x => {
+        if (x !== newString[newString.length - 1]) {
+            newString += x;
+        }
+    })
+    return newString;
+}
+
 /* Likes Vs Dislikes 7kyu
 https://www.codewars.com/kata/62ad72443809a4006998218a/train/javascript
 */
