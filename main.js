@@ -1,5 +1,19 @@
 // My daily Codewars answers. Newest first.
 
+/* You're a square! 7kyu
+https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript
+*/
+var isSquare = function (n) {
+    if (n < 0) {
+        return false
+    } else if (Number.isInteger(Math.sqrt(n)) === true) {
+        return true
+    } else {
+        return false
+    }
+}
+
+
 /* Two to One 7kyu
 https://www.codewars.com/kata/5656b6906de340bd1b0000ac/train/javascript
 */
