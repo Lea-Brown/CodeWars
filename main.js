@@ -1,5 +1,17 @@
 // My daily Codewars answers. Newest first.
 
+/* Jaden Casing Strings 7kyu
+https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/javascript
+*/
+String.prototype.toJadenCase = function () {
+    let arr = this.split(" ");
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+    }
+    let str2 = arr.join(' ')
+    return str2;
+};
+
 /* You're a square! 7kyu
 https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript
 */
