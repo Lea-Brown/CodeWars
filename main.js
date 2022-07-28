@@ -1,5 +1,24 @@
 // My daily Codewars answers. Newest first.
 
+/* Beginner Series #3 Sum of Numbers 7kyu
+https://www.codewars.com/kata/55f2b110f61eb01779000053/train/javascript
+*/
+function getSum(a, b) {
+    let total = 0;
+    if (a < b) {
+        for (let i = a; i <= b; i++) {
+            total += i;
+        }
+    } else if (a > b) {
+        for (let i = b; i <= a; i++) {
+            total += i;
+        }
+    } else {
+        total += a
+    }
+    return total;
+}
+
 /* Jaden Casing Strings 7kyu
 https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/javascript
 */
