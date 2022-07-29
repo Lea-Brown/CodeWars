@@ -1,5 +1,22 @@
 // My daily Codewars answers. Newest first.
 
+/* Multiples of 3 or 5 6kyu
+https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript
+*/
+function solution(number) {
+    let total = 0;
+    for (let i = 0; i < number; i++) {
+        if (i % 3 === 0) {
+            total += i;
+        } else if (i % 5 === 0) {
+            total += i;
+        } else {
+            total += 0;
+        }
+    }
+    return total;
+}
+
 /* Beginner Series #3 Sum of Numbers 7kyu
 https://www.codewars.com/kata/55f2b110f61eb01779000053/train/javascript
 */
