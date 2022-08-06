@@ -1,5 +1,11 @@
 // My daily Codewars answers. Newest first.
 
+/* Sum of Digits / Digital Root 6kyu
+https://www.codewars.com/kata/541c8630095125aba6000c00/javascript */
+function digital_root(n) {
+    return (n - 1) % 9 + 1;
+}
+
 /* Bit Counting 6kyu
 https://www.codewars.com/kata/526571aae218b8ee490006f4/javascript */
 var countBits = function (n) {
