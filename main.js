@@ -1,5 +1,18 @@
 // My daily Codewars answers. Newest first.
 
+/* Find The Parity Outlier 6kyu
+https://www.codewars.com/kata/5526fc09a1bbd946250002dc/javascript */
+function findOutlier(integers) {
+    let odd = 0;
+    let even = 0;
+    integers.forEach(x => x % 2 === 0 ? even++ : odd++);
+    if (even > odd) {
+        return Number(integers.filter(x => x % 2 !== 0))
+    } else {
+        return Number(integers.filter(x => x % 2 === 0))
+    }
+}
+
 /* Stop gninnipS My sdroW! 6kyu
 https://www.codewars.com/kata/5264d2b162488dc400000001/javascript */
 function spinWords(string) {
