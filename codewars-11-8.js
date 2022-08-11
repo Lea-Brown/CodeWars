@@ -12,7 +12,6 @@ Examples
 function toCamelCase(str) {
     let newStr = ''
     str.replace(/[^a-zA-Z]/g, " ").split(' ').forEach((x, i) => {
-        console.log(x)
         if (i === 0) {
             newStr = x
         } else {
