@@ -1,4 +1,5 @@
-/* Mirror object - tcejbo rorriM 6kyu
+/* 6kyu
+Mirror object - tcejbo rorriM 
 
 https://www.codewars.com/kata/586305e8916e244b66001a93/javascript
 
