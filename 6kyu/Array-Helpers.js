@@ -1,44 +1,5 @@
-// Doign array ladder 8 7 6 kyu 
-
-/*
-Convert number to reversed array of digits 8kyu
-
-https://www.codewars.com/kata/5583090cbe83f4fd8c000051/javascript
-
-Convert number to reversed array of digits
-Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
-
-Example(Input => Output):
-348597 => [7,9,5,8,4,3]
-0 => [0]
-*/
-
-function digitize(n) {
-    return n.toString().split('').map(n => +n).reverse();
-}
-
-/* Sort array by string length 7kyu
-
-https://www.codewars.com/kata/57ea5b0b75ae11d1e800006c/javascript
-
-Write a function that takes an array of strings as an argument and returns a sorted array containing the same strings, ordered from shortest to longest.
-
-For example, if this array were passed as an argument:
-
-["Telescopes", "Glasses", "Eyes", "Monocles"]
-
-Your function would return the following array:
-
-["Eyes", "Glasses", "Monocles", "Telescopes"]
-
-All of the strings in the array passed to your function will be different lengths, so you will not have to decide how to order multiple strings of the same length.
-*/
-
-function sortByLength(array) {
-    return array.sort((a, b) => a.length - b.length);
-};
-
-/* Array Helpers 6kyu
+/* 6kyu
+Array Helpers
 
 https://www.codewars.com/kata/525d50d2037b7acd6e000534/javascript
 
