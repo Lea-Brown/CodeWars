@@ -1,21 +1,5 @@
-/*Break camelCase 6kyu
-
-https://www.codewars.com/kata/5208f99aee097e6552000148/javascript
-
-DESCRIPTION:
-Complete the solution so that the function will break up camel casing, using a space between words.
-
-Example
-"camelCasing"  =>  "camel Casing"
-"identifier"   =>  "identifier"
-""             =>  ""
-*/
-
-function solution(string) {
-    return string.split(/(?=[A-Z])/).join(' ');
-}
-
-/* Take a Ten Minutes Walk 6kyu
+/* 6kyu
+Take a Ten Minutes Walk 
 
 I'm a baddy and I write bad code. This needs cleaning up a lot.
 
