@@ -1,24 +1,3 @@
-// My daily Codewars answers. Newest first.
-
-/* Convert a String to a Number! 8kyu
-https://www.codewars.com/kata/544675c6f971f7399a000e79/javascript */
-const stringToNumber = function (str) {
-    return Number(str)
-}
-
-/* Replace With Alphabet Position 6kyu
-https://www.codewars.com/kata/546f922b54af40e1e90001da/javascript */
-function alphabetPosition(text) {
-    let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-    let newStr = '';
-    text.toLowerCase().split('').forEach(x => {
-        if (alphabet.indexOf(x) + 1 > 0) {
-            newStr += alphabet.indexOf(x) + 1 + ' ';
-        }
-    })
-    return newStr.trim();
-}
-
 /* Find The Parity Outlier 6kyu
 https://www.codewars.com/kata/5526fc09a1bbd946250002dc/javascript */
 function findOutlier(integers) {
