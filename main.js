@@ -1,31 +1,3 @@
-/* Find The Parity Outlier 6kyu
-https://www.codewars.com/kata/5526fc09a1bbd946250002dc/javascript */
-function findOutlier(integers) {
-    let odd = 0;
-    let even = 0;
-    integers.forEach(x => x % 2 === 0 ? even++ : odd++);
-    if (even > odd) {
-        return Number(integers.filter(x => x % 2 !== 0))
-    } else {
-        return Number(integers.filter(x => x % 2 === 0))
-    }
-}
-
-/* Stop gninnipS My sdroW! 6kyu
-https://www.codewars.com/kata/5264d2b162488dc400000001/javascript */
-function spinWords(string) {
-    let newArr = [];
-    string = string.split(' ');
-    string.forEach(x => {
-        if (x.length > 4) {
-            newArr.push(x.split('').reverse().join(''))
-        } else {
-            newArr.push(x)
-        }
-    })
-    return newArr.join(' ')
-}
-
 /* Sum of Digits / Digital Root 6kyu
 https://www.codewars.com/kata/541c8630095125aba6000c00/javascript */
 function digital_root(n) {
