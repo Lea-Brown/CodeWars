@@ -1,17 +1,3 @@
-/* Sum of Digits / Digital Root 6kyu
-https://www.codewars.com/kata/541c8630095125aba6000c00/javascript */
-function digital_root(n) {
-    return (n - 1) % 9 + 1;
-}
-
-/* Bit Counting 6kyu
-https://www.codewars.com/kata/526571aae218b8ee490006f4/javascript */
-var countBits = function (n) {
-    let total = 0;
-    n.toString(2).split('').forEach(x => total += Number(x));
-    return total;
-}
-
 /* Find the odd int 6kyu
 Googled ways to find odd elements in array and stumbled on this solution. I don't really understand it. At the moment anyway.
 https://www.codewars.com/kata/54da5a58ea159efa38000836/javascript */
