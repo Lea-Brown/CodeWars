@@ -1,1 +1,1 @@
-# CodeWars-Daily-Push
+# CodeWars
