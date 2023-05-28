@@ -33,54 +33,54 @@ A unit of time must be used "as much as possible". It means that the function sh
 */
 
 function formatDuration(seconds) {
-    let years = Math.floor(seconds / 60 / 60 / 24 / 354);
-    let days = Math.floor(seconds / 60 / 60 / 24);
-    let hours = Math.floor(seconds / 3600);
-    seconds %= 3600;
-    let minutes = Math.floor(seconds / 60);
-    let trueSeconds = seconds % 60;
+  let years = Math.floor(seconds / 60 / 60 / 24 / 354);
+  let days = Math.floor(seconds / 60 / 60 / 24);
+  let hours = Math.floor(seconds / 3600);
+  seconds %= 3600;
+  let minutes = Math.floor(seconds / 60);
+  let trueSeconds = seconds % 60;
 
-    let arr = [];
+  let arr = [];
 
-    if (years > 1) {
-        arr.push(`${years} years`);
-    } else if (years == 1) {
-        arr.push(`${years} year`);
-    }
+  if (years > 1) {
+    arr.push(`${years} years`);
+  } else if (years == 1) {
+    arr.push(`${years} year`);
+  }
 
-    if (days % 365 == 1) {
-        arr.push(`1 day`);
-    } else if (days % 365 > 1) {
-        arr.push(`${days % 365} days`);
-    }
+  if (days % 365 == 1) {
+    arr.push(`1 day`);
+  } else if (days % 365 > 1) {
+    arr.push(`${days % 365} days`);
+  }
 
-    if (hours % 24 == 1) {
-        arr.push('1 hour')
-    } else if (hours % 24 > 1) {
-        arr.push(`${hours % 24} hours`);
-    }
+  if (hours % 24 == 1) {
+    arr.push('1 hour');
+  } else if (hours % 24 > 1) {
+    arr.push(`${hours % 24} hours`);
+  }
 
-    if (minutes > 1) {
-        arr.push(`${minutes} minutes`);
-    } else if (minutes == 1) {
-        arr.push(`${minutes} minute`);
-    }
+  if (minutes > 1) {
+    arr.push(`${minutes} minutes`);
+  } else if (minutes == 1) {
+    arr.push(`${minutes} minute`);
+  }
 
-    if (trueSeconds > 1) {
-        arr.push(`${trueSeconds} seconds`);
-    } else if (trueSeconds == 1) {
-        arr.push(`${trueSeconds} second`);
-    }
+  if (trueSeconds > 1) {
+    arr.push(`${trueSeconds} seconds`);
+  } else if (trueSeconds == 1) {
+    arr.push(`${trueSeconds} second`);
+  }
 
-    if (arr.length == 0) {
-        return 'now'
-    } else if (arr.length == 1) {
-        return arr[0]
-    } else if (arr.length == 2) {
-        return arr.join(' and ')
-    } else {
-        let group = arr.slice(0, arr.length - 1)
-        let last = arr.slice(-1)
-        return group.join(', ') + ' and ' + last[0]
-    }
+  if (arr.length == 0) {
+    return 'now';
+  } else if (arr.length == 1) {
+    return arr[0];
+  } else if (arr.length == 2) {
+    return arr.join(' and ');
+  } else {
+    let group = arr.slice(0, arr.length - 1);
+    let last = arr.slice(-1);
+    return group.join(', ') + ' and ' + last[0];
+  }
 }
