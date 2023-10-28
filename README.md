@@ -1,3 +1,3 @@
 # CodeWars
 
-Daily learning
+Daily learning.
