@@ -26,3 +26,32 @@ function countGrade(scores) {
     X: scores.filter(e => e == -1).length,
   };
 }
+
+// Is this better?
+
+function countGrade(scores) {
+  let result = {
+    S: 0,
+    A: 0,
+    B: 0,
+    C: 0,
+    D: 0,
+    X: 0,
+  };
+
+  scores.forEach(e => {
+    e == 100
+      ? (result.S += 1)
+      : e < 100 && e >= 90
+      ? (result.A += 1)
+      : e < 90 && e >= 80
+      ? (result.B += 1)
+      : e < 80 && e >= 60
+      ? (result.C += 1)
+      : e < 60 && e >= 0
+      ? (result.D += 1)
+      : (result.X += 1);
+  });
+
+  return result;
+}
