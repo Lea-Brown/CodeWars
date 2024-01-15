@@ -2,4 +2,4 @@
 
 Daily learning.
 
-Get those green marks
+Get those green marks.
