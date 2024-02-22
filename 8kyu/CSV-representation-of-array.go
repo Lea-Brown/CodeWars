@@ -19,10 +19,6 @@ output:
     +'20,21,22,23,24\n'
     +'30,31,32,33,34'
 Array's length > 2.
-
-More details here: https://en.wikipedia.org/wiki/Comma-separated_values
-
-Note: you shouldn't escape the \n, it should work as a new line.
 */
 
 // Helped by chatGPT
