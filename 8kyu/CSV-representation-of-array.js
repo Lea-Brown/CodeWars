@@ -21,4 +21,4 @@ output:
 Array's length > 2.
 */
 
-const toCsvText = array => array.join('\n');
+const toCsvText = (array) => array.join("\n");
