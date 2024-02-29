@@ -1,9 +1,3 @@
-/* Friend or Foe? 7kyu
-https://www.codewars.com/kata/55b42574ff091733d900002f/javascript */
-function friend(friends) {
-  return friends.filter((x) => x.length == 4);
-}
-
 /* Credit Card Mask 7kyu
 https://www.codewars.com/kata/5412509bd436bd33920011bc */
 function maskify(cc) {
