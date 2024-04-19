@@ -19,11 +19,13 @@ As usual, your function/method should be pure, i.e. it should not mutate the ori
 */
 
 String.prototype.toAlternatingCase = function () {
-    return [...this].map(x => {
-        if (x == x.toLowerCase()) {
-            return x.toUpperCase()
-        } else {
-            return x.toLowerCase()
-        }
-    }).join('')
-}
+  return [...this]
+    .map((x) => {
+      if (x == x.toLowerCase()) {
+        return x.toUpperCase();
+      } else {
+        return x.toLowerCase();
+      }
+    })
+    .join("");
+};
