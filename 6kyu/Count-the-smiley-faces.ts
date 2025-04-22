@@ -1,9 +1,8 @@
 /* 6 kyu
 Count the smiley faces!
 
-https://www.codewars.com/kata/583203e6eb35d7980400002a/javascript
+https://www.codewars.com/kata/583203e6eb35d7980400002a/typescript
 
-DESCRIPTION:
 Given an array (arr) as an argument complete the function countSmileys that should return the total number of smiling faces.
 
 Rules for a smiling face:
@@ -24,31 +23,24 @@ Note
 In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.
 */
 
-function countSmileys(arr) {
-  if (arr.length === 0) return 0;
-
-  let eyes = [":", ";"];
-  let nose = ["-", "~"];
-  let mouth = [")", "D"];
-  let count = 0;
-
-  for (let i = 0; i < arr.length; i++) {
-    let split = arr[i].split("");
-    if (arr[i].length > 3) {
-      count += 0;
-    } else if (arr[i].length == 3) {
-      if (
-        eyes.includes(split[0]) &&
-        nose.includes(split[1]) &&
-        mouth.includes(split[2])
-      ) {
-        count++;
-      }
-    } else if (arr[i].length == 2) {
-      if (eyes.includes(split[0]) && mouth.includes(split[1])) {
-        count++;
-      }
-    }
+export function countSmileys(arr: string[]): number {
+  const valid: { [key: string]: boolean } = {
+    ":)": true,
+    ":-)": true,
+    ":~)": true,
+    ":D": true,
+    ":-D": true,
+    ":~D": true,
+    ";)": true,
+    ";-)": true,
+    ";~)": true,
+    ";D": true,
+    ";-D": true,
+    ";~D": true,
+  };
+  let count: number = 0;
+  for (const each of arr) {
+    if (valid[each]) count++;
   }
   return count;
 }
