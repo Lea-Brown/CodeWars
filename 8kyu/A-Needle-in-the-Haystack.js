@@ -19,17 +19,17 @@ Note: In COBOL, it should return "found the needle at position 6"
 */
 
 function findNeedle(haystack) {
-    let needle;
-    haystack.forEach((x, i) => {
-        if (x === 'needle') {
-            needle = i
-        }
-    })
-    return `found the needle at position ${needle}`
+  let needle;
+  haystack.forEach((x, i) => {
+    if (x === "needle") {
+      needle = i;
+    }
+  });
+  return `found the needle at position ${needle}`;
 }
 
 // refactor
 
 function findNeedle(haystack) {
-    return `found the needle at position ${haystack.indexOf('needle')}`
+  return `found the needle at position ${haystack.indexOf("needle")}`;
 }
